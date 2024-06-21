@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>KAMLEWA TECHNOLOGIES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <img id="bg" src="images/login-bbackground.JPG">
+    <div class="shade"> </div>
+    <form action="/login.html" method="post" id="login">
+        <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Email ID"required>
+        </div> <span class="mdi-light--email"></span>
+        <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+            <button type="button" id="togglePassword" class="toggle-password">Show</button>
+        </div>
+        <div class="button-group">
+            <button class="login"type="submit">Login</button>
+        </div>
+        <label for="checkboxId">
+            <input type="checkbox" id="checkboxId">Remember me
+        </label>
+    <div class="circle1"> </div>
+    <span class="material-symbols-light--stacked-email-sharp"></span>
+    <div class="circle2"> </div>
+    <span class="guidance--lock"></span>
+    </form>
+    <a href="#reset password">Forgot password?</a>
+    <h4>Don't have an account?</h4>
+    <a id="signUp" href="signUp.html">SignUp</a>
+    </body>

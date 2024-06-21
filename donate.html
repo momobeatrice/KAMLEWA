@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kamlewa.org</title>
+        <link rel="stylesheet" href="donate.css">
+        <script src="donate.js"></script>
+
+    </head>
+    <body>
+        <img src="images/landing-image4.jpeg">
+        <div class="overlay"> </div>
+        <div class="square1"><h4>YOUR DONATION, NO MATTER HOW BIG, WILL CHANGE A LIFE <br><span class="la--donate"></span></h4> </div>
+        <div class="squarea"></div>
+        <div class="square2"><span>For more information contact:</span> <br> +237 65 87 78 52 <br> +237 65 87 78 52 <br> <span>Or Email:</span><br> Kamlewa.technologies@gmail.com </div>
+        <div class="squareb"></div>
+        <div class="square3"> </div>
+        <div class="squarec"></div>
+        <div class="text">
+            <h1>HELP US DO MORE</h1>
+            <h4>Be a part of our mission to bring tech to our less fortunate communities. Togeether we can build a community of geniuses</h4>
+            <h2>WELCOME TO KAMLEWA</h2>
+            <h6>Technology is the future and what better future than a one in which all kids have access to the beauties of technology? Unfortunately, that is noot the case as a goood number of kids have no access to basic resources like lessons, equipment, gadgets and internet connection. Providing the less previlidge with the chance to experience all these is the oone singular goal of kAMLEWA. By donating to the company, you are helping to make the dreams of kids all over the country who dream to be great and make our nation great, to achieve their goal. Be a part of this journey as we make the dreams of the young generation come through by bringing the wonders of technology to them. <br>THANK YOU</h6>
+        </div>
+        <div class="bar"> </div>
+        <div class="foot">
+            <div class="foot1"><span class="material-symbols--database"></span> <h1>0.00FCFA</h1><br> <h4>Total Donation</h4></div>
+            <div class="foot2"><span class="bi--files"></span> <h1> 0.00 </h1><br><h4>Total Projects</h4></div>
+            <div class="foot3"><span class="ic--baseline-people"></span> <h1>0.00</h1><h4>Total Volunteers</h4></div>
+        </div>
+        <div class="help"> <img src="images/donate.png"></div>
+        <div class="donate"><button id="donate" onclick="reduceSize()">Donate</button></div>
+
+        <div id="donateModal" class="modal">
+            <div class="modal-content">
+                <span id="closeModal">&times;</span>
+                <h2>Enter your donation details</h2>
+                <form id="payment-form">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" name="amount" required><br><br>
+                    <div id="card-element"><!--Stripe.js injects the Card Element--></div><br>
+                    <button type="submit">Submit Payment</button>
+                    <div id="card-errors" role="alert"></div>
+                </form>
+            </div>
+        </div>
+        <script>
+            function reduceSize() {
+            var button = document.getElementById('donate');
+            button.classList.toggle('reduced');
+            }
+        </script>
+    </body>
